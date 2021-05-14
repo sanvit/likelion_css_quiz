@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .box{
+            height: 10px;
+            width: 30%;
+            background-color: pink;
+            border-radius: 15px;
+            animation: hello 7s infinite;
+        }        
+        .border{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            height: 10px;
+            width: 30%;
+            border: 10px solid yellow;
+            border-radius: 15px;
+        }
+        @keyframes hello{
+            0%{
+                width:0px;
+            }
+            100%{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+    <div class="box"></div>
+    </div>
+</body>
